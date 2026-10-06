@@ -1,0 +1,19 @@
+{
+  "name": "jenkins-calculator-demo",
+  "version": "1.0.0",
+  "description": "Simple calculator website with Node.js tests and Jenkins CI/CD deployment to GitHub Pages.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test tests/*.test.js",
+    "deploy": "node scripts/deploy-gh-pages.js",
+    "start": "node scripts/build.js && node scripts/serve.js"
+  },
+  "keywords": [
+    "jenkins",
+    "ci-cd",
+    "github-pages",
+    "calculator"
+  ],
+  "license": "MIT"
+}
