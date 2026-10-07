@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jenkins Calculator Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="calculator" aria-labelledby="page-title">
+        <p class="eyebrow">CI/CD Demo</p>
+        <h1 id="page-title">เครื่องคิดเลขบวกเลข</h1>
+        <!-- <p class="lead">เว็บตัวอย่างสำหรับ Jenkins Pipeline: Build, Test และ Deploy ไป GitHub Pages</p> -->
+<!--  -->
+        <form id="calculator-form" class="calculator-form">
+          <label>
+            เลขตัวที่ 1
+            <input id="number-a" type="number" step="any" value="10" required />
+          </label>
+          <label>
+            เลขตัวที่ 2
+            <input id="number-b" type="number" step="any" value="5" required />
+          </label>
+          <button type="submit">คำนวณ</button>
+        </form>
+
+        <output id="result" class="result" aria-live="polite">ผลลัพธ์: 15</output>
+        <!-- <p class="hint">ลองแก้ฟังก์ชันบวกเลขใน <code>src/calculator.js</code> ให้ผิด แล้ว push เพื่อสาธิต Jenkins ขึ้นสีแดง</p> -->
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
